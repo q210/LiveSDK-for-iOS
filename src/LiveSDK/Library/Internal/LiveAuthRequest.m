@@ -185,6 +185,8 @@ currentViewController:(UIViewController *)currentViewController
     UINavigationController *modalDialog = [[[UINavigationController alloc]initWithRootViewController:self.authViewController]
                                           autorelease];
     
+    modalDialog.modalPresentationStyle = UIModalPresentationFormSheet;
+    
     [self.currentViewController presentViewController:modalDialog
                                              animated:YES
                                            completion:nil];
